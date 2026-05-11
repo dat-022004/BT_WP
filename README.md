@@ -13,11 +13,12 @@ Hệ thống được cấu hình và khởi chạy với 3 service chính:
 
 Sau khi thiết lập file `docker-compose.yml`, tiến hành chạy lệnh `docker compose up -d`. Dưới đây là kết quả kiểm tra các container đang chạy bằng lệnh `docker ps`:
 
-![Docker Containers Running](img/z7814507093322_429a420b0911194e876a8008a5d29a32.jpg)
+<img width="989" height="516" alt="image" src="https://github.com/user-attachments/assets/7b86b34f-9a7b-4fd9-a258-1bf32000e464" />
+
 
 Truy cập vào PhpMyAdmin và đăng nhập với quyền root để tạo một cơ sở dữ liệu trống có tên là `wordpress_db`. Cơ sở dữ liệu này sẽ được WordPress sử dụng để tự động khởi tạo các bảng:
 
-![Giao diện PhpMyAdmin](img/z7814498089032_4bc773878d4e987346a59724fbd0c01a.jpg)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/226c16d0-bca1-4276-b750-81515a92e2a3" />
 
 ---
 
@@ -25,7 +26,7 @@ Truy cập vào PhpMyAdmin và đăng nhập với quyền root để tạo mộ
 
 Trước khi public website ra Internet, tôi đã tiến hành cài đặt WordPress và tạo các bài viết ở môi trường Localhost. Dưới đây là giao diện Admin Dashboard trực quan của WordPress khi truy cập qua localhost:
 
-![Giao diện Admin WordPress Local](img/z7814471106876_168a9dc77c193c20f25b008d04b7b2f3.jpg)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5f60526d-2f54-4304-9766-38c76e9842ae" />
 
 Tiếp theo, tôi đã tiến hành tạo các bài viết theo yêu cầu của bài tập:
 1. **Bài viết giới thiệu bản thân**: Có chứa thông tin cá nhân, hình ảnh và các sở thích.
@@ -33,7 +34,7 @@ Tiếp theo, tôi đã tiến hành tạo các bài viết theo yêu cầu của
 
 Hình ảnh dưới đây minh họa quá trình soạn thảo bài "Giới thiệu bản thân" thông qua localhost. Trình soạn thảo Gutenberg của WordPress cho phép dễ dàng chèn hình ảnh, căn chỉnh văn bản một cách trực quan:
 
-![Giao diện soạn thảo bài viết Local](img/z7814489315484_2268e566eaea9cbebe51ea8c719c73d9.jpg)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2e83811a-d7e3-4ee0-afcc-282aa57b067c" />
 
 ---
 
@@ -43,16 +44,16 @@ Sau khi website đã có đầy đủ nội dung, để public website ra ngoài
 
 Dưới đây là màn hình Terminal cho thấy tiến trình Cloudflare Tunnel đang chạy và duy trì kết nối (Proxy) thành công:
 
-![Cloudflared Tunnel Logs](img/z7814564449829_397e09b69a93196ddfce8b81b34ac295.jpg)
+<img width="978" height="516" alt="image" src="https://github.com/user-attachments/assets/b8fecbfc-616d-4a48-9f75-fb053e171ac4" />
 
 Giao diện quản lý DNS trên Cloudflare xác nhận bản ghi (Record) đã được trỏ thành công về Tunnel của WordPress, đảm bảo người dùng có thể truy cập website qua sub-domain an toàn:
 
-![Cloudflare DNS Records](img/z7814572909375_a8be7ebe77ac2e5701c80b0537f4674b.jpg)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f64fc6ca-71fa-4365-bf2f-2ddab62ac88e" />
 
 **Kết Quả Hoạt Động:** 
 Dưới đây là màn hình quản lý danh sách các bài viết đã được xuất bản trên website. **Lưu ý trên thanh địa chỉ, website lúc này đang được truy cập và quản trị thành công thông qua tên miền chính thức (`wp.dangdinhdat.id.vn`) thay vì localhost, chứng minh quá trình cấu hình Cloudflare Tunnel đã thành công tuyệt đối:**
 
-![Danh sách bài viết qua Domain](img/z7814570208540_9de5afad4a6b2b8396ad82491987f3c9.jpg)
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/c24a3102-7cc3-4110-b7df-bf7ca3e0b512" />
 
 ---
 
